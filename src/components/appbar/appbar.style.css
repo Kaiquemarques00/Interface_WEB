@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #1D3331;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+
+    & img {
+        height: 100%;
+        padding-right: 50px;
+        cursor: pointer;
+    }
+
+    & button {
+        height: 55px;
+        background-color: #1D3331;
+        border: none;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+
+    & p {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      margin-bottom: 8%;
+    }
+  }
+  
+  .modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .confirm-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(10px, 5vw, 20px) clamp(2%, 5vw, 5%);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(10px, 5vw, 20px) clamp(20px, 5vw, 80px);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0c0c0;
+  }
