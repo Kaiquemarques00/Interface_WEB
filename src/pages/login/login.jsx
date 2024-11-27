@@ -35,7 +35,7 @@ function Login() {
   };
 
   return (
-    <section>
+    <section className="login-container">
       <form onSubmit={handleSubmit} action="">
         <img src={Logo} alt="Logo da empresa" />
         <label>Email:</label>
