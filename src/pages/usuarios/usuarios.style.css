@@ -265,7 +265,13 @@ main {
 
                     & .infos {
                         font-size: clamp(1.2rem, 2vw, 1.6rem);
-                        gap: 25px;
+                        gap: 20px;
+                        display: flex;
+                        align-items: start;
+
+                        & p {
+                            margin: 0;
+                        }
                     }
                 }
             }

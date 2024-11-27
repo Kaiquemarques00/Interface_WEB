@@ -3,7 +3,6 @@ import Sidebar from "../../components/sidebar/sidebar.jsx";
 import Appbar from "../../components/appbar/appbar.jsx";
 import api from "../../service/api.js";
 
-import "./plantios.style.css";
 
 const AlertModal = ({ show, message, onCancel, list }) => {
     if (!show) return null;
