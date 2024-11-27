@@ -6,7 +6,7 @@
     align-items: center;
     background-color: #1D3331;
 
-    & form {
+    & .login-form {
         width: 90%;
         background-color: #D9D9D9;
         color: #000;
@@ -17,21 +17,21 @@
         padding: 30px 20px;
         border-radius: 10px;
 
-        img {
+        & .login-img {
             max-width: 150px;
             margin: 0 auto;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        label {
+        & .login-label {
             font-size: clamp(1.1rem, 2.5vw, 1.6rem);
             margin-top: 20px;
             margin-bottom: 5px;
             font-weight: 500;
         }
 
-        input {
+        & .login-input {
             width: 100%;
             height: 45px;
             border: none;
@@ -42,7 +42,7 @@
             font-size: clamp(1.05rem, 2vw, 1.5rem);
         }
 
-        button {
+        & .login-button {
             align-self: flex-end;
             margin-top: 40px;
             border: none;
@@ -54,11 +54,11 @@
             cursor: pointer;
         }
 
-        button:hover {
+        & .login-button:hover{
             filter: brightness(80%);
         }
 
-        p {
+        & .login-erro {
             margin-top: 20px;
             width: 100%;
             text-align: end;
@@ -71,27 +71,27 @@
 
     .login-container {
 
-        & form {
+        & .login-form {
             max-width: 50%;
             padding: 50px 30px;
             
-            img {
+            & .login-img {
                 max-width: 20%;
             }
     
-            label {
+            & .login-label {
                 margin-top: 30px;
                 padding-left: 20%;
             }
     
-            input {
+            & .login-input {
                 width: 60%;
                 min-height: 60px;
                 padding: 0 20px;
                 margin: 0 auto;
             }
     
-            button {
+            & .login-button {
                 margin-top: 60px;
                 align-self: center;
                 padding: 13px 10%;

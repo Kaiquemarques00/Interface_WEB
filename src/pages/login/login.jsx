@@ -36,26 +36,28 @@ function Login() {
 
   return (
     <section className="login-container">
-      <form onSubmit={handleSubmit} action="">
-        <img src={Logo} alt="Logo da empresa" />
-        <label>Email:</label>
+      <form onSubmit={handleSubmit} action="" className="login-form">
+        <img src={Logo} className="login-img" alt="Logo da empresa" />
+        <label className="login-label">Email:</label>
         <input
           type="email"
+          className="login-input"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <label>Senha:</label>
+        <label className="login-label">Senha:</label>
         <input
           type="password"
+          className="login-input"
           value={senha}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" onClick={handleSubmit}>
+        <button type="submit" className="login-button" onClick={handleSubmit}>
           Login
         </button>
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <p style={{ color: "red" }} className="login-erro">{error}</p>}
       </form>
     </section>
   );
